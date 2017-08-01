@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="0dp">
+    <!-- Propriedades
+     ** 'android:layout_weight='  -> Propriedade que faz o ajuste no tamanho
+     dos componentes visuais. Ele atribui um peso aos componentes, fazendo-os
+     ocupar uma área maior do layout de acordo com o peso atribuido. Para
+     fazê-lo ocupar um espaço menor, devemos atribuir o peso '0', ou tirar os
+     valores que foram atribuídos a esta propiedade. Desta forma o componente
+     visual irá ocupar somente o espaço necessário do layout;
+     ** 'android:layout_width='   -> Propiedade que vai definir se o componente
+     visual irá ocupar a área toda na HORIZONTAL ou não. O valor que deve ser
+     atribuido à esta propiedade caso o componente deva ocupar toda a área deve
+     ser "match_parent". Caso contrário deverá ser "wrap_content";
+     ** 'android:layout_height='   -> Propiedade que vai definir se o componente
+     visual irá ocupar a área toda na VERTICAL ou não. O valor que deve ser
+     atribuido à esta propiedade caso o componente deva ocupar toda a área deve
+     ser "match_parent". Caso contrário deverá ser "wrap_content";
+     ** 'android:layout_gravity='  -> Propriedade que define a disposição do
+     componente gráfico no layout, como por exemplo, centralizado, no final
+     ou no inicio;
+     -->
+
+    <TextView
+        android:text="@string/lbl_valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edtValor1" />
+
+    <TextView
+        android:text="@string/lbl_valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edtValor2" />
+
+    <Button
+        android:text="@string/lbl_calcular"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalcular"
+        android:textAlignment="center"
+        android:elevation="0dp"
+        android:freezesText="false"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>

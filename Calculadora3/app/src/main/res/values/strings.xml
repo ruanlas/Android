@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora3</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_valor1">Valor 1</string>
+    <string name="lbl_valor2">Valor 2</string>
+    <string name="lbl_adicao">Adição</string>
+    <string name="lbl_subtracao">Subtração</string>
+    <string name="lbl_divisao">Divisão</string>
+    <string name="lbl_multiplicacao">Multiplicação</string>
+</resources>

@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ruan.terceiroexemplo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Devemos configurar neste arquivo manifest qual será a classe (activity) que será
+        reproduzida primeiro, ou seja, qual será a classe principal (Main) que será executada logo
+        quando o projeto for iniciado-->
+
+        <!-- O comando abaixo está adicionando um Activity ao projeto android.
+        Foi atribuído o nome do activity (android:name), que é o mesmo nome da classe activity, e um
+        rótulo (android:label) para identificar o activity-->
+        <activity android:name=".ActMain"
+                  android:label="TerceiroExemplo">
+            <!-- Agora vamos definir esta activity como sendo a Main, ou seja, ela será executada
+             no momento em que o projeto for iniciado. Para isso precisamos dar uma "intenção" para
+             este Activity-->
+            <intent-filter>
+                <!-- Esta tag permite dar algumas permissões para o Activity, adicionar alguns valores
+                 que o activity poderá fazer. Neste caso temos duas intenções para este activity:
+                 1) Será executado no momento em que o aplicativo for iniciado
+                 2) Será o arquivo principal (Main)
+                 para isso, temos que definir uma ação e uma categoria dentro da intenção do Activity-->
+
+                <!-- A ação abaixo define que esta Activity será a principal-->
+                <action android:name="android.intent.action.MAIN"/>
+                <!-- A categoria abaixo define que esta Activity será executada-->
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>
